@@ -1,0 +1,39 @@
+@keyframes modernPulse {
+  0% {
+    fill-opacity: 0.2;
+    stroke-opacity: 0.5;
+    stroke-width: 2px;
+  }
+
+  50% {
+    fill-opacity: 0.7;
+    stroke-opacity: 1;
+    stroke-width: 4px;
+  }
+
+  100% {
+    fill-opacity: 0.2;
+    stroke-opacity: 0.5;
+    stroke-width: 2px;
+  }
+}
+
+.modern-blink path {
+  animation: modernPulse 2s infinite ease-in-out;
+  fill: #06b6d4;
+  /* Cyan-500 */
+  stroke: #0891b2;
+  /* Cyan-600 */
+}
+
+.contour-label {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 10px;
+  font-weight: bold;
+  color: #a553b7;
+  /* Match contour line color */
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  /* Halo effect */
+}
